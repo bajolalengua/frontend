@@ -1,0 +1,124 @@
+<a routerLink="/adminstracion/crear-persona" class="btn" >Nueva persona</a>
+<table class="table responsive">
+    <thead>
+
+        <th>
+            Identificacion
+        </th>
+
+        <th>
+            Nombres
+        </th>
+
+        <th>
+            Apellidos
+        </th>
+
+        <th>
+            Teléfono
+        </th>
+
+        <th>
+            Dirección
+        </th>
+
+        <th>
+            Email
+        </th>
+
+        <th>
+            Edad
+        </th>
+
+        <th>
+            Fecha Nacimiento
+        </th>
+
+        <th>
+            Sueldo
+        </th>
+
+        <th>
+            Es Directivo
+        </th>
+
+        <th>
+            Es Cliente
+        </th>
+
+        <th>
+            Numero Documento
+        </th>
+
+        <th>
+            Id Empresa
+        </th>
+
+
+    </thead>    
+    <tbody>
+        <tr *ngFor= 'let p of listadoRegistros'>
+            
+            <td>
+                {{p.id}}
+            </td>
+
+            <td>
+                {{p.nombre}}
+            </td>
+
+            <td>
+                {{p.Apellidos}}
+            </td>
+
+            <td>
+                {{p.telefono}}
+            </td>
+
+            <td>
+                {{p.direccion}}
+            </td>
+
+            <td>
+                {{p.Email}}
+            </td>
+
+            <td>
+                {{p.edad}}
+            </td>
+
+            <td>
+                {{p.fechaNacimiento}}
+            </td>
+
+            <td>
+                {{p.sueldo}}
+            </td>
+
+            <td>
+                {{p.esDirectivo}}
+            </td>
+
+            <td>
+                {{p.esCliente}}
+            </td>
+
+            <td>
+                {{p.numeroDocumento}}
+            </td>
+
+            <td>
+                {{p.empresaId}}
+            </td>
+
+            <td>
+               <a routerLink="/adminstracion/empleados/buscar-persona{{p.id}}" class="btn"></a>
+            </td>
+
+           
+
+        </tr>
+
+
+    </tbody>
+</table>
